@@ -23,10 +23,17 @@ public class MobilePhone {
 	String brandName = "IPhone";
 	
 	
+	
 	//Method or Function
 	void makeCalls() {
 		//print a line
 		System.out.println("Making a call");
+		
+	}
+	
+	void sendText() {
+		//print a line
+		System.out.println("Sending text message");
 		
 	}
 	
