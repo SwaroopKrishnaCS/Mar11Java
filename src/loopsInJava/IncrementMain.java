@@ -9,6 +9,7 @@ public class IncrementMain {
 		//lp.printStudentNameFromArray();
 		//lp.findJerin();
 		//lp.printAge();
-		lp.attemptATM();
+		//lp.attemptATM();
+		lp.sumOfEvenNumber();
 	}
 }

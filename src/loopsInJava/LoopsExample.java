@@ -4,7 +4,7 @@ public class LoopsExample {
 
 	int a = 5;
 	String nameOfStudent = "jerin";
-	String[] listOfStudents = { "Prabh", "Manvir", "Arsh", "Jerin", "Gian" };
+	String[] listOfStudents = { "Prabh", "Merin", "Arsh", "Manvir", "Gian" };
 	int[] ageOfStudents = { 15, 16, 14, 12, 18, 21, 17, 11 };
 
 	public void printStudentName() {
@@ -28,12 +28,19 @@ public class LoopsExample {
 		System.out.println("A value pre increment  " + a);
 	}
 
-	public void findJerin() {
-		// for(counter;maximum condition for loop;increment condition){
-		// }
+	boolean isMerinPresentInList = false;
 
-		for (int counter = 0; counter < 5; counter = counter + 2) {
-			System.out.println(listOfStudents[counter]);
+	public void findJerin() {
+		for (int counter = 0; counter < listOfStudents.length; counter++) {
+			if (listOfStudents[counter] == "Merin") {
+				isMerinPresentInList = true;
+				System.out.println("Merin name is in the list");
+				break;
+			}
+		}
+
+		if (!isMerinPresentInList) {
+			System.out.println("Merin is not in the list");
 		}
 	}
 
@@ -47,6 +54,17 @@ public class LoopsExample {
 		for (int i = 1; i <= 3; i++) {
 			System.out.println("Wrong attempt");
 		}
+	}
+
+	void sumOfEvenNumber() {
+
+		for (int i = 1; i <= 10; i++) {
+			int sum = 0;
+			if(i%3==0) {
+				sum=sum+i;
+			}
+		}
+	
 	}
 
 }
