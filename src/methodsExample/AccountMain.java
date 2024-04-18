@@ -60,19 +60,29 @@ public class AccountMain {
 //			}
 //
 //		}
+		
+		
+		boolean isAccountValidated = false;
+//		for (int i = 0; i < accounts.length; i++) {
+//
+//			if (accounts[i].validateCredentials(accountNumEntered, pinEntered)) {
+//				System.out.println("Account Holder Name: " + accounts[i].getNameOfAccountHolder());
+//				System.out.println("Type Of Account: " + accounts[i].getAccountType());
+//				System.out.println("Account Balance: " + accounts[i].getBalance());
+//				isAccountValidated = true;
+//				break;
+//			}
+//		}
+//		if (!isAccountValidated) {
+//			System.out.println("Account Details are not correct");
+//		}
 
-		for (int i = 0; i < accounts.length; i++) {
-
-			if (accounts[i].validateCredentials(accountNumber, pinEntered)) {
-				System.out.println("Account Holder Name: " + accounts[i].getNameOfAccountHolder());
-				System.out.println("Type Of Account: " + accounts[i].getAccountType());
-				System.out.println("Account Balance: " + accounts[i].getBalance());
-				break;
-			} else {
-				System.out.println("Accoutn Details are not correct");
-			}
-		}
-
+		Account account = new Account();
+		account = account.getAccountIfValidCredentials(accountNumEntered, pinEntered, accounts);
+		account.displayAccountDetails();
+		rajinderAccount.displayAccountDetails();
+		
+		
 	}
 
 }
