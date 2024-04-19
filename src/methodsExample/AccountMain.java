@@ -6,6 +6,7 @@ public class AccountMain {
 
 	public static void main(String[] args) {
 
+		//Constructor without parameter
 		Account jerinAccount = new Account();
 		jerinAccount.accountNumber = "123456789";
 		jerinAccount.nameOFAccountHolder = "Jerin Raj";

@@ -1,6 +1,6 @@
 package methodsExample;
 
-public class Account {
+public class AccountWithConstructor {
 
 	String nameOFAccountHolder;
 	String accountType;
@@ -9,7 +9,27 @@ public class Account {
 	double balance;
 	int pin;
 
-	
+//	public AccountWithConstructor(String name, String acctType, String acctNum, double bal, int pinNumber) {
+//		nameOFAccountHolder = name;
+//		accountType = acctType;
+//		accountNumber = acctNum;
+//		balance = bal;
+//		pin = pinNumber;
+//	}
+
+	public AccountWithConstructor(String nameOFAccountHolder, String accountType, String accountNumber, double balance,
+			int pin) {
+		super();
+		this.nameOFAccountHolder = nameOFAccountHolder;
+		this.accountType = accountType;
+		this.accountNumber = accountNumber;
+		this.balance = balance;
+		this.pin = pin;
+	}
+
+	public AccountWithConstructor() {
+
+	}
 
 	public String getNameOfAccountHolder() {
 		return nameOFAccountHolder;
@@ -45,8 +65,9 @@ public class Account {
 		return false;
 	}
 
-	public Account getAccountIfValidCredentials(String accountNumberEntered, int pinEntered, Account[] accounts) {
-		Account ac = new Account();
+	public AccountWithConstructor getAccountIfValidCredentials(String accountNumberEntered, int pinEntered,
+			AccountWithConstructor[] accounts) {
+
 		for (int i = 0; i < accounts.length; i++) {
 			if (accounts[i].getAccountNumber().equals(accountNumberEntered)) {
 				if (accounts[i].pin == pinEntered) {
