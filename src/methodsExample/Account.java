@@ -56,6 +56,7 @@ public class Account {
 		}
 		return null;
 	}
+	
 
 	public void displayAccountDetails() {
 		System.out.println("Account Holder Name: " + getNameOfAccountHolder());

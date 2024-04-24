@@ -12,11 +12,21 @@ public class ConstructorsMain {
 
 		AccountWithConstructor gianAcct = new AccountWithConstructor("Gian", "TFSA", "321654988", 6521.03, 1234);
 
+//		System.out.println("Gian PIN Number: "+ gianAcct.pin );
+		
 		System.out.println(gianAcct.getBalance());
 		
-		AccountWithConstructor accouConstructor = new AccountWithConstructor();
+//		AccountWithConstructor accouConstructor = new AccountWithConstructor();
+//		
+//		System.out.println(accouConstructor.getBalance());
 		
-		System.out.println(accouConstructor.getBalance());
+//		gianAcct.pin =4567;
+		
+//		System.out.println("Gian PIN Number: "+ gianAcct.pin );
+		
+		
+	
+		
 	}
 
 }

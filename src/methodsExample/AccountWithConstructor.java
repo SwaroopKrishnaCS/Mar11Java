@@ -2,12 +2,12 @@ package methodsExample;
 
 public class AccountWithConstructor {
 
-	String nameOFAccountHolder;
-	String accountType;
-	String accountNumber;
+	public String nameOFAccountHolder;
+	public String accountType;
+	private String accountNumber;
 
-	double balance;
-	int pin;
+	private double balance;
+	private int pin;
 
 //	public AccountWithConstructor(String name, String acctType, String acctNum, double bal, int pinNumber) {
 //		nameOFAccountHolder = name;
@@ -47,7 +47,7 @@ public class AccountWithConstructor {
 		return accountType;
 	}
 
-	public boolean validatePin(int pinEntered) {
+	private boolean validatePin(int pinEntered) {
 
 		if (pin == pinEntered) {
 			return true;
