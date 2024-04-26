@@ -31,6 +31,10 @@ public class AccountWithConstructor {
 
 	}
 
+	public AccountWithConstructor(String nameOFAccountHolder, String accountType) {
+
+	}
+
 	public String getNameOfAccountHolder() {
 		return nameOFAccountHolder;
 	}
