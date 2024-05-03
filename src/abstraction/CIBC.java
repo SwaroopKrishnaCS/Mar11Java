@@ -41,4 +41,10 @@ public  class  CIBC  extends NationalBank implements Brokerage,ForexTransactions
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public void provideCheques() {
+		// TODO Auto-generated method stub
+		
+	}
 }

@@ -1,6 +1,6 @@
 package abstraction;
 
-public class TDBank extends NationalBank {
+public  class TDBank extends NationalBank {
 
 	@Override
 	public void interestonSaving() {
@@ -12,5 +12,14 @@ public class TDBank extends NationalBank {
 		System.out.println("Provide loans starting from prime rate 5.1%");
 	}
 
+	@Override
+	public void provideCheques() {
+		// TODO Auto-generated method stub
+		System.out.println("provide 3 cheques by default");
+	}
+
+	
+
+	
 	
 }

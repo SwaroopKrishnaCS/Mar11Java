@@ -48,6 +48,17 @@ public class Main {
 		System.out.println("_________________________________________");
 		//appliance3.displayCustomerReviews();
 		appliance3.displaySpecifications();//Here since we do not have an overloaded method in washing machine it will call parent class method
+	
+		Appliance hplaptop = new Laptop();
+		
+		hplaptop.displayCustomerReviews();
+		
+		
+		Laptop laptop3 = new Laptop();
+		laptop3.orderAdditionalMemory();
+		
+	
+	
 	}
 
 }
