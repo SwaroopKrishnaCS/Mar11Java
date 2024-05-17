@@ -18,6 +18,9 @@ public class Transaction {
 	public String getType() {
 		return type;
 	}
+	
+
+
 	public void setType(String type) {
 		this.type = type;
 	}
@@ -34,4 +37,8 @@ public class Transaction {
 		this.balance = balance;
 	}
 
+	@Override
+	public String toString() {
+		return "Transaction [type=" + type + ", amount=" + amount + "]";
+	}
 }

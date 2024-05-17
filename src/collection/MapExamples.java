@@ -27,6 +27,8 @@ public class MapExamples {
 		System.out.println("Name of Roll no 4 :"+students.get(4));
 		System.out.println("Name of Roll no 4 :"+students.get(24));
 		
+		
+		
 		HashMap<String,String> groceryList = new HashMap<String, String>();
 		
 		groceryList.put("Brar", "Paneer");
@@ -60,6 +62,8 @@ public class MapExamples {
 		System.out.println(finTransactions.get("AshishSinNumber").toString());
 		
 		System.out.println("Transaction :"+ finTransactions.get("AshishSinNumber").getType() + " Amount : "+finTransactions.get("AshishSinNumber").getAmount());
+		
+		
 		
 		
 	}
